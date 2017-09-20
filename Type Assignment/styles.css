@@ -4,6 +4,11 @@
   color: red;
 }*/
 
+img {
+  border: none;
+}
+
+
 p {
   color: black;
   /*font-family: Helvetica, Arial, sans-serif;*/
@@ -15,7 +20,7 @@ p {
 h1 {
   /*font-family: Georgia, "Times New Roman", serif;*/
   font-family: 'Merriweather', Georgia, "Times New Roman", serif;
-  text-align:center;
+
 
 }
 
@@ -62,7 +67,7 @@ body {
 }
 
 #nav a:hover,#nav a:active {
-  background-color:#bfc7d8;
+  background-color:white;
   text-decoration: underline;
-  text-decoration-color:#white;
+  text-decoration-color: black;
 }
