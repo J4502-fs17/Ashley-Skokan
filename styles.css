@@ -6,57 +6,51 @@
 
 img {
   border: none;
+  float: left;
 }
-
 
 p {
   color: black;
-  /*font-family: Helvetica, Arial, sans-serif;*/
-    font-family: 'Raleway', sans-serif, Helvetica, Arial;
+  font-family: 'Raleway', sans-serif, Helvetica, Arial;
   text-align:center;
-
 }
 
 h1 {
-  /*font-family: Georgia, "Times New Roman", serif;*/
   font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+  font-size: 60px;
+}
 
-
+h2 {
+  font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+  font-size: 30px;
 }
 
 body {
   background-color: gray;
   text-align:center;
-
 }
 
 #container {
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin: 0 auto 0 auto;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.caption {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  text-align: right;
-  margin-top: 5px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
 }
 
 #nav {
   padding: 0;
-}
-
-#nav li {
   list-style-type: none;
 }
 
+#nav li {
+  padding: 15px 18px;
+  display: inline-flex;
+}
+
 #nav a:link {
-  display: block;
+  display: inline flex;
+  min-width: 140px;
+  height: 30px;
   color:black;
   background-color: #bfc7d8;
   font-weight: bold;
@@ -70,4 +64,45 @@ body {
   background-color:white;
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+.caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 0 50px;
+}
+
+.sidebar img, p {
+  display: inline-flex;
+}
+
+
+@media screen and (max-width:450px) {
+  img {
+    float: none;
+  }
+  #container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #nav li {
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sidebar img, p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
