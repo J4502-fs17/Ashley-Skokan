@@ -44,6 +44,38 @@ nav ul{
   flex-flow: column;
 }
 
+nav ul li {
+  display: block;
+  border-top: 1px #79896d solid;
+}
+
+nav a {
+  color: #f8ecc2;
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  background-color: #65a8a6;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.menu-trigger {
+  order: 1;
+}
+
+header h1 {
+  order: 2;
+}
+
+nav ul {
+  display: none;
+}
+
 #container {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -182,5 +214,20 @@ nav ul{
   }
   .section1 p:first-of-type, section2 p:first-of-type {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-wdith: 700px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    border-top: none;
+  }
+  .menu-trigger {
+    display: none;
+  }
+  nav {
+    order: 2;
   }
 }
