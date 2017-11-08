@@ -217,7 +217,7 @@ nav ul {
   }
 }
 
-@media screen and (min-wdith: 700px) {
+@media screen and (min-width: 700px) {
   nav ul {
     display: flex;
   }
