@@ -41,7 +41,7 @@ article:last-of-type {
 
 nav ul{
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 nav ul li {
