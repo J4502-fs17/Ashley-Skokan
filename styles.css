@@ -28,6 +28,8 @@ h2 {
 body {
   background-color: gray;
   text-align:center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 article {
@@ -122,6 +124,29 @@ nav ul {
   font-style: italic;
   text-align: right;
   margin-top: 5px;
+}
+
+.container {
+  padding: 10px;
+  background: #fff;
+    border-radius: 5px;
+  margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(o,0,0,0.1);
+}
+
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .authorbox img {
